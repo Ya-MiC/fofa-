@@ -1,463 +1,73 @@
-以下是按国家分块、格式精美的 FOFA 搜索代码，每块都清晰列出了主要本地运营商及其 ASN，方便你复制粘贴即用。
-
----
-
-## 1. 新加坡 (SG)
-
-**主要本地运营商及 ASN：**  
-- Singtel — ASN 7473  ([Tier 1 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_1_network?utm_source=chatgpt.com))  
-- StarHub — ASN 4657  ([StarHub AS4657 - PeeringDB](https://www.peeringdb.com/asn/4657?utm_source=chatgpt.com))  
-- M1 — ASN 17547  ([M1 Limited - AS4773 - PeeringDB](https://www.peeringdb.com/asn/4773?utm_source=chatgpt.com))  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="SG"
-&& (asn="7473" || asn="4657" || asn="17547")
-```
-
----
-
-## 2. 新西兰 (NZ)
-
-**主要本地运营商及 ASN：**  
-- Spark — ASN 12357  
-- Vodafone NZ — ASN 7545  
-- 2degrees — ASN 6037  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="NZ"
-&& (asn="12357" || asn="7545" || asn="6037")
-```
-
----
-
-## 3. 韩国 (KR)
-
-**主要本地运营商及 ASN：**  
-- SK Broadband — ASN 9318  ([SK Broadband](https://en.wikipedia.org/wiki/SK_Broadband?utm_source=chatgpt.com), [ASN Information for 9318 SK Broadband Co Ltd - IP2Location](https://www.ip2location.com/as9318?utm_source=chatgpt.com))  
-- KT Corp — ASN 4766  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- LG U+ — ASN 4763  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="KR"
-&& (asn="9318" || asn="4766" || asn="4763")
-```
-
----
-
-## 4. 日本 (JP)
-
-**主要本地运营商及 ASN：**  
-- NTT Communications — ASN 2914  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- KDDI — ASN 2516  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- SoftBank — ASN 17676  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="JP"
-&& (asn="2914" || asn="2516" || asn="17676")
-```
-
----
-
-## 5. 英国 (GB)
-
-**主要本地运营商及 ASN：**  
-- British Telecom (BT) — ASN 5400  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- Virgin Media — ASN 5089  
-- Sky UK — ASN 12876  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="GB"
-&& (asn="5400" || asn="5089" || asn="12876")
-```
-
----
-
-## 6. 法国 (FR)
-
-**主要本地运营商及 ASN：**  
-- Orange S.A. — ASN 5511  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- SFR — ASN 1273  
-- Bouygues Telecom — ASN 12479  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="FR"
-&& (asn="5511" || asn="1273" || asn="12479")
-```
-
----
-
-## 7. 德国 (DE)
-
-**主要本地运营商及 ASN：**  
-- Deutsche Telekom — ASN 3320  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- Vodafone DE — ASN 3209  
-- Unitymedia (現 Vodafone) — ASN 6830  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="DE"
-&& (asn="3320" || asn="3209" || asn="6830")
-```
-
----
-
-## 8. 美国 (US)
-
-**主要本地运营商及 ASN：**  
-- Comcast — ASN 7922  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- AT&T — ASN 7018  
-- Verizon — ASN 701  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="US"
-&& (asn="7922" || asn="7018" || asn="701")
-```
-
----
-
-## 9. 加拿大 (CA)
-
-**主要本地运营商及 ASN：**  
-- Bell Canada — ASN 577  ([AS577 Bell Canada - bgp.he.net](https://bgp.he.net/as577?utm_source=chatgpt.com))  
-- Rogers Communications — ASN 812  ([AS812 Rogers Communications Canada Inc. Network Details - IPQS](https://www.ipqualityscore.com/asn-details/AS812/rogers-communications-canada-inc?utm_source=chatgpt.com))  
-- Telus — ASN 852  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="CA"
-&& (asn="577" || asn="812" || asn="852")
-```
-
----
-
-## 10. 香港 (HK)
-
-**主要本地运营商及 ASN：**  
-- PCCW Global — ASN 3491  ([AS3491 PCCW Global, Inc. - bgp.tools](https://bgp.tools/as/3491?utm_source=chatgpt.com))  
-- HKT — ASN 4637  
-- Hutchison Telecom Hong Kong — ASN 7552  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="HK"
-&& (asn="3491" || asn="4637" || asn="7552")
-```
-
----
-
-## 11. 台湾 (TW)
-
-**主要本地运营商及 ASN：**  
-- Chunghwa Telecom — ASN 3462  ([Tier 2 network - Wikipedia](https://en.wikipedia.org/wiki/Tier_2_network?utm_source=chatgpt.com))  
-- Taiwan Mobile — ASN 9498  
-- FarEasTone — ASN 9808  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="TW"
-&& (asn="3462" || asn="9498" || asn="9808")
-```
-
----
-
-## 12. 荷兰 (NL)
-
-**主要本地运营商及 ASN：**  
-- KPN B.V. — ASN 1136  ([ASN Information for 1136 KPN B.V. - IP2Location](https://www.ip2location.com/as1136?utm_source=chatgpt.com))  
-- Ziggo — ASN 8767  
-- T-Mobile Netherlands — ASN 11309  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="NL"
-&& (asn="1136" || asn="8767" || asn="11309")
-```
-
----
-
-## 13. 挪威 (NO)
-
-**主要本地运营商及 ASN：**  
-- Telenor Norway — ASN 1299  
-- Altibox — ASN 6795  
-- NextGenTel — ASN 27852  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="NO"
-&& (asn="1299" || asn="6795" || asn="27852")
-```
-
----
-
-## 14. 瑞士 (CH)
-
-**主要本地运营商及 ASN：**  
-- Swisscom — ASN 3303  
-- Sunrise Communications — ASN 6853  
-- Salt (Swisscom Subsidiary) — ASN 13188  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="CH"
-&& (asn="3303" || asn="6853" || asn="13188")
-```
-
----
-
-## 15. 波兰 (PL)
-
-**主要本地运营商及 ASN：**  
-- Orange Polska — ASN 5617  
-- T-Mobile Polska — ASN 1267  
-- Netia — ASN 1243  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="PL"
-&& (asn="5617" || asn="1267" || asn="1243")
-```
-
----
-
-## 16. 阿拉伯联合酋长国 (AE)
-
-**主要本地运营商及 ASN：**  
-- Etisalat (UAE) — ASN 7843  
-- du UAE — ASN 15684  
-- Yahsat — ASN 24863  
-
-**FOFA 搜索代码：**  
-```plaintext
-(header="cloudflare" || cert="cloudflare" || header="google" || cert="google" ||
- header="yahoo"    || cert="yahoo"    || header="amazon" || cert="amazon" ||
- header="alibaba"  || cert="alibaba")
-&& status_code="403" && country="AE"
-&& (asn="7843" || asn="15684" || asn="24863")
-```
-
----
-
-> **提示：**  
-> - 以上大厂（Cloudflare/Google/Yahoo/Amazon/Alibaba）与本地运营商结合，就能一次性筛出高质量、可优选且可做 Proxy 的 IP。  
-> - 若要调整状态码为 406，只需将 `status_code="403"` 改为 `status_code="406"` 即可。  
-
-
-以下是在保证格式大体不变的前提下，将所有 FOFA 搜索代码“拆成一行一个 ASN”的版本；并且**只保留** `header="cloudflare"`，如有需要再自行补充其他大厂。你可以直接复制粘贴。
-
----
-
-## 1. 新加坡 (SG)
+下面给出一条专门用来搜索「既是家庭宽带 IP（Residential ISP），又通过 Cloudflare 反向代理」的 FOFA 语句示例，你可以按此格式替换国家和运营商名称／ASN 使用：
 
 ```plaintext
-header="cloudflare" && status_code="403" && country="SG" && asn="7473"
-header="cloudflare" && status_code="403" && country="SG" && asn="4657"
-header="cloudflare" && status_code="403" && country="SG" && asn="17547"
+header="cloudflare" && country="KR" && isp="SK Broadband Co Ltd" && status_code="403"
 ```
+
+- `header="cloudflare"`：筛选 Cloudflare 反代节点  
+- `country="KR"`：限定在韩国  
+- `isp="SK Broadband Co Ltd"`：只选家庭宽带运营商 SK Broadband  
+- `status_code="403"`：通常 403 返回更稳定、不可直接访问的反代节点  
 
 ---
 
-## 2. 新西兰 (NZ)
+## 如何在 16 个国家做同样的搜索
+
+只要把 `country` 和 `isp` 两个字段改成目标国家／运营商即可。下面按前面列出的 16 国主要 ISP 给出完整示例——每个国家一条语句：
 
 ```plaintext
-header="cloudflare" && status_code="403" && country="NZ" && asn="12357"
-header="cloudflare" && status_code="403" && country="NZ" && asn="7545"
-header="cloudflare" && status_code="403" && country="NZ" && asn="6037"
+// 1. 新加坡 (SG)
+header="cloudflare" && country="SG" && isp="Singtel" && status_code="403"
+
+// 2. 新西兰 (NZ)
+header="cloudflare" && country="NZ" && isp="Spark New Zealand" && status_code="403"
+
+// 3. 韩国 (KR)
+header="cloudflare" && country="KR" && isp="SK Broadband Co Ltd" && status_code="403"
+
+// 4. 日本 (JP)
+header="cloudflare" && country="JP" && isp="NTT Communications" && status_code="403"
+
+// 5. 英国 (GB)
+header="cloudflare" && country="GB" && isp="British Telecommunications" && status_code="403"
+
+// 6. 法国 (FR)
+header="cloudflare" && country="FR" && isp="Orange S.A." && status_code="403"
+
+// 7. 德国 (DE)
+header="cloudflare" && country="DE" && isp="Deutsche Telekom" && status_code="403"
+
+// 8. 美国 (US)
+header="cloudflare" && country="US" && isp="Comcast" && status_code="403"
+
+// 9. 加拿大 (CA)
+header="cloudflare" && country="CA" && isp="Bell Canada" && status_code="403"
+
+// 10. 香港 (HK)
+header="cloudflare" && country="HK" && isp="PCCW Global" && status_code="403"
+
+// 11. 台湾 (TW)
+header="cloudflare" && country="TW" && isp="Chunghwa Telecom" && status_code="403"
+
+// 12. 荷兰 (NL)
+header="cloudflare" && country="NL" && isp="KPN B.V." && status_code="403"
+
+// 13. 挪威 (NO)
+header="cloudflare" && country="NO" && isp="Telenor Norway" && status_code="403"
+
+// 14. 瑞士 (CH)
+header="cloudflare" && country="CH" && isp="Swisscom" && status_code="403"
+
+// 15. 波兰 (PL)
+header="cloudflare" && country="PL" && isp="Orange Polska" && status_code="403"
+
+// 16. 阿联酋 (AE)
+header="cloudflare" && country="AE" && isp="Etisalat (UAE)" && status_code="403"
 ```
 
----
+> **说明**  
+> - 如果你更习惯用 ASN 过滤，也可以把 `isp="…" ` 换成 `asn="XXXX"`。  
+> - 若要切换到返回 406 状态，只需把 `status_code="403"` 改成 `status_code="406"`。  
+> - 以上语句均可直接复制到 FOFA 搜索框使用。  
 
-## 3. 韩国 (KR)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="KR" && asn="9318"
-header="cloudflare" && status_code="403" && country="KR" && asn="4766"
-header="cloudflare" && status_code="403" && country="KR" && asn="4763"
-```
-
----
-
-## 4. 日本 (JP)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="JP" && asn="2914"
-header="cloudflare" && status_code="403" && country="JP" && asn="2516"
-header="cloudflare" && status_code="403" && country="JP" && asn="17676"
-```
-
----
-
-## 5. 英国 (GB)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="GB" && asn="5400"
-header="cloudflare" && status_code="403" && country="GB" && asn="5089"
-header="cloudflare" && status_code="403" && country="GB" && asn="12876"
-```
-
----
-
-## 6. 法国 (FR)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="FR" && asn="5511"
-header="cloudflare" && status_code="403" && country="FR" && asn="1273"
-header="cloudflare" && status_code="403" && country="FR" && asn="12479"
-```
-
----
-
-## 7. 德国 (DE)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="DE" && asn="3320"
-header="cloudflare" && status_code="403" && country="DE" && asn="3209"
-header="cloudflare" && status_code="403" && country="DE" && asn="6830"
-```
-
----
-
-## 8. 美国 (US)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="US" && asn="7922"
-header="cloudflare" && status_code="403" && country="US" && asn="7018"
-header="cloudflare" && status_code="403" && country="US" && asn="701"
-```
-
----
-
-## 9. 加拿大 (CA)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="CA" && asn="577"
-header="cloudflare" && status_code="403" && country="CA" && asn="812"
-header="cloudflare" && status_code="403" && country="CA" && asn="852"
-```
-
----
-
-## 10. 香港 (HK)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="HK" && asn="3491"
-header="cloudflare" && status_code="403" && country="HK" && asn="4637"
-header="cloudflare" && status_code="403" && country="HK" && asn="7552"
-```
-
----
-
-## 11. 台湾 (TW)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="TW" && asn="3462"
-header="cloudflare" && status_code="403" && country="TW" && asn="9498"
-header="cloudflare" && status_code="403" && country="TW" && asn="9808"
-```
-
----
-
-## 12. 荷兰 (NL)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="NL" && asn="1136"
-header="cloudflare" && status_code="403" && country="NL" && asn="8767"
-header="cloudflare" && status_code="403" && country="NL" && asn="11309"
-```
-
----
-
-## 13. 挪威 (NO)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="NO" && asn="1299"
-header="cloudflare" && status_code="403" && country="NO" && asn="6795"
-header="cloudflare" && status_code="403" && country="NO" && asn="27852"
-```
-
----
-
-## 14. 瑞士 (CH)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="CH" && asn="3303"
-header="cloudflare" && status_code="403" && country="CH" && asn="6853"
-header="cloudflare" && status_code="403" && country="CH" && asn="13188"
-```
-
----
-
-## 15. 波兰 (PL)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="PL" && asn="5617"
-header="cloudflare" && status_code="403" && country="PL" && asn="1267"
-header="cloudflare" && status_code="403" && country="PL" && asn="1243"
-```
-
----
-
-## 16. 阿联酋 (AE)
-
-```plaintext
-header="cloudflare" && status_code="403" && country="AE" && asn="7843"
-header="cloudflare" && status_code="403" && country="AE" && asn="15684"
-header="cloudflare" && status_code="403" && country="AE" && asn="24863"
-```
-
----
-
-> **提示：** 如果需要切换到 `status_code="406"`，只需全局替换即可。  
-> 如需再加大厂（Google/Amazon/Alibaba/Yahoo）条件，按需在任何一行内增加 `|| header="google"` 等即可。
+这样，你就能一键在各地 ISP 中挑出那些家宽级别的、同时被 Cloudflare 反代的高质量 IP。
