@@ -294,3 +294,170 @@
 > - 以上大厂（Cloudflare/Google/Yahoo/Amazon/Alibaba）与本地运营商结合，就能一次性筛出高质量、可优选且可做 Proxy 的 IP。  
 > - 若要调整状态码为 406，只需将 `status_code="403"` 改为 `status_code="406"` 即可。  
 
+
+以下是在保证格式大体不变的前提下，将所有 FOFA 搜索代码“拆成一行一个 ASN”的版本；并且**只保留** `header="cloudflare"`，如有需要再自行补充其他大厂。你可以直接复制粘贴。
+
+---
+
+## 1. 新加坡 (SG)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="SG" && asn="7473"
+header="cloudflare" && status_code="403" && country="SG" && asn="4657"
+header="cloudflare" && status_code="403" && country="SG" && asn="17547"
+```
+
+---
+
+## 2. 新西兰 (NZ)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="NZ" && asn="12357"
+header="cloudflare" && status_code="403" && country="NZ" && asn="7545"
+header="cloudflare" && status_code="403" && country="NZ" && asn="6037"
+```
+
+---
+
+## 3. 韩国 (KR)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="KR" && asn="9318"
+header="cloudflare" && status_code="403" && country="KR" && asn="4766"
+header="cloudflare" && status_code="403" && country="KR" && asn="4763"
+```
+
+---
+
+## 4. 日本 (JP)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="JP" && asn="2914"
+header="cloudflare" && status_code="403" && country="JP" && asn="2516"
+header="cloudflare" && status_code="403" && country="JP" && asn="17676"
+```
+
+---
+
+## 5. 英国 (GB)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="GB" && asn="5400"
+header="cloudflare" && status_code="403" && country="GB" && asn="5089"
+header="cloudflare" && status_code="403" && country="GB" && asn="12876"
+```
+
+---
+
+## 6. 法国 (FR)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="FR" && asn="5511"
+header="cloudflare" && status_code="403" && country="FR" && asn="1273"
+header="cloudflare" && status_code="403" && country="FR" && asn="12479"
+```
+
+---
+
+## 7. 德国 (DE)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="DE" && asn="3320"
+header="cloudflare" && status_code="403" && country="DE" && asn="3209"
+header="cloudflare" && status_code="403" && country="DE" && asn="6830"
+```
+
+---
+
+## 8. 美国 (US)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="US" && asn="7922"
+header="cloudflare" && status_code="403" && country="US" && asn="7018"
+header="cloudflare" && status_code="403" && country="US" && asn="701"
+```
+
+---
+
+## 9. 加拿大 (CA)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="CA" && asn="577"
+header="cloudflare" && status_code="403" && country="CA" && asn="812"
+header="cloudflare" && status_code="403" && country="CA" && asn="852"
+```
+
+---
+
+## 10. 香港 (HK)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="HK" && asn="3491"
+header="cloudflare" && status_code="403" && country="HK" && asn="4637"
+header="cloudflare" && status_code="403" && country="HK" && asn="7552"
+```
+
+---
+
+## 11. 台湾 (TW)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="TW" && asn="3462"
+header="cloudflare" && status_code="403" && country="TW" && asn="9498"
+header="cloudflare" && status_code="403" && country="TW" && asn="9808"
+```
+
+---
+
+## 12. 荷兰 (NL)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="NL" && asn="1136"
+header="cloudflare" && status_code="403" && country="NL" && asn="8767"
+header="cloudflare" && status_code="403" && country="NL" && asn="11309"
+```
+
+---
+
+## 13. 挪威 (NO)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="NO" && asn="1299"
+header="cloudflare" && status_code="403" && country="NO" && asn="6795"
+header="cloudflare" && status_code="403" && country="NO" && asn="27852"
+```
+
+---
+
+## 14. 瑞士 (CH)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="CH" && asn="3303"
+header="cloudflare" && status_code="403" && country="CH" && asn="6853"
+header="cloudflare" && status_code="403" && country="CH" && asn="13188"
+```
+
+---
+
+## 15. 波兰 (PL)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="PL" && asn="5617"
+header="cloudflare" && status_code="403" && country="PL" && asn="1267"
+header="cloudflare" && status_code="403" && country="PL" && asn="1243"
+```
+
+---
+
+## 16. 阿联酋 (AE)
+
+```plaintext
+header="cloudflare" && status_code="403" && country="AE" && asn="7843"
+header="cloudflare" && status_code="403" && country="AE" && asn="15684"
+header="cloudflare" && status_code="403" && country="AE" && asn="24863"
+```
+
+---
+
+> **提示：** 如果需要切换到 `status_code="406"`，只需全局替换即可。  
+> 如需再加大厂（Google/Amazon/Alibaba/Yahoo）条件，按需在任何一行内增加 `|| header="google"` 等即可。
